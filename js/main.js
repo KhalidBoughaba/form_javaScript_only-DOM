@@ -22,10 +22,12 @@ var
     myInput_password = document.createElement("input"),
     myInput_confirmerPass = document.createElement("input"),
 
-    allInput = document.querySelectorAll(".inpt");
+    // Create Buttons
+    btnAjoute = document.createElement("button"),
+    contentBtn = document.createTextNode("Ajouté"),
 
-//create Attribute "type" to Input
-attr_nom = document.createAttribute("type");
+    //create Attribute "type" to Input
+    attr_nom = document.createAttribute("type");
 attr_nom.value = "text";
 
 attr_prenom = document.createAttribute("type");
@@ -78,6 +80,8 @@ myForm.appendChild(myInput_password);
 myForm.appendChild(label_confirmerPass);
 myForm.appendChild(myInput_confirmerPass);
 
+myForm.appendChild(btnAjoute);
+btnAjoute.appendChild(contentBtn);
 
 //Added id IN Label
 label_nom.id = "lbN";
@@ -107,6 +111,10 @@ document.getElementById("lbPh").innerHTML = "Phone <br>";
 document.getElementById("lbE").innerHTML = "Email <br>";
 document.getElementById("lbPss").innerHTML = "Mot de Passe <br>";
 document.getElementById("lbCpss").innerHTML = "Confirmer Mot de Passe <br>";
+
+//Added Name In Button
+
+document.getElementsByTagName("button").textContent = "Ajouté";
 
 // Using Style "css" In Element
 
