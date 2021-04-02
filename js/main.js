@@ -133,19 +133,35 @@ Object.assign(myForm.style, {
 });
 
 //Style On Input
-Object.assign(myInput_nom.style, { display: "block", padding: "8px", borderRadius: "10px", width: "300px", margin: "5px", });
+Object.assign(myInput_nom.style, { display: "block",
+                                    padding: "8px",
+                                    borderBottom: "thick solid yellow",
+                                    background: "transparent",
+                                    color:"yellow",
+                                    width: "300px",
+                                    margin: "5px",
+                                    borderRadius:"10px",
+});
 
-Object.assign(myInput_prenom.style, { display: "block", padding: "8px", borderRadius: "10px", width: "300px", margin: "5px" });
+Object.assign(myInput_prenom.style, { display: "block",
+                                    padding: "8px", 
+                                    borderBottom: "thick solid yellow",
+                                    background: "transparent",
+                                    color:"yellow", 
+                                    width: "300px", 
+                                    margin: "5px",
+                                    borderRadius:"10px",
+});
 
-Object.assign(myInput_adresse.style, { display: "block", padding: "8px", borderRadius: "10px", width: "300px", margin: "5px" });
+Object.assign(myInput_adresse.style, { display: "block", padding: "8px", borderBottom: "thick solid yellow",background: "transparent",color:"yellow", width: "300px", margin: "5px",borderRadius:"10px", });
 
-Object.assign(myInput_phone.style, { display: "block", padding: "8px", borderRadius: "10px", width: "300px", margin: "5px" });
+Object.assign(myInput_phone.style, { display: "block", padding: "8px", borderBottom: "thick solid yellow",background: "transparent",color:"yellow", width: "300px", margin: "5px",borderRadius:"10px", });
 
-Object.assign(myInput_email.style, { display: "block", padding: "8px", borderRadius: "10px", width: "300px", margin: "5px" });
+Object.assign(myInput_email.style, { display: "block", padding: "8px", borderBottom: "thick solid yellow",background: "transparent",color:"yellow", width: "300px", margin: "5px",borderRadius:"10px", });
 
-Object.assign(myInput_password.style, { display: "block", padding: "8px", borderRadius: "10px", width: "300px", margin: "5px" });
+Object.assign(myInput_password.style, { display: "block", padding: "8px", borderBottom: "thick solid yellow",background: "transparent",color:"yellow", width: "300px", margin: "5px",borderRadius:"10px", });
 
-Object.assign(myInput_confirmerPass.style, { display: "block", padding: "8px", borderRadius: "10px", width: "300px", margin: "5px" });
+Object.assign(myInput_confirmerPass.style, { display: "block", padding: "8px", borderBottom: "thick solid yellow",background: "transparent",color:"yellow", width: "300px", margin: "5px",borderRadius:"10px", });
 
 //Style On Label
 
@@ -156,3 +172,7 @@ Object.assign(label_phone.style, { color: "white", fontFamily: "sans-serif" })
 Object.assign(label_email.style, { color: "white", fontFamily: "sans-serif" })
 Object.assign(label_password.style, { color: "white", fontFamily: "sans-serif" })
 Object.assign(label_confirmerPass.style, { color: "white", fontFamily: "sans-serif" })
+
+//Style Button
+
+Object.assign(btnAjoute.style,{color:"black", backgroundColor:"yellow", padding:"8px",borderRadius:"10px", width:"90px"})
