@@ -22,20 +22,38 @@ var
     myInput_password = document.createElement("input"),
     myInput_confirmerPass = document.createElement("input"),
 
-    allInput = document.querySelectorAll(".inpt"),
+    allInput = document.querySelectorAll(".inpt");
 
-    //create Attribute
-    attr = document.createAttribute("type");
-attr.value = "text";
+//create Attribute "type" to Input
+attr_nom = document.createAttribute("type");
+attr_nom.value = "text";
 
-// Append Attribute to Input
-myInput_nom.setAttributeNode(attr);
-/*myInput_prenom.setAttributeNode(attr);
-myInput_adresse.setAttributeNode(attr);
-myInput_phone.setAttributeNode(attr);
-myInput_email.setAttributeNode(attr);
-myInput_password.setAttributeNode(attr);
-myInput_confirmerPass.setAttributeNode(attr);*/
+attr_prenom = document.createAttribute("type");
+attr_prenom.value = "text";
+
+attr_adresse = document.createAttribute("type");
+attr_adresse.value = "text";
+
+attr_phone = document.createAttribute("type");
+attr_phone.value = "text";
+
+attr_email = document.createAttribute("type");
+attr_email.value = "text";
+
+attr_password = document.createAttribute("type");
+attr_password.value = "password";
+
+attr_confirmerPass = document.createAttribute("type");
+attr_confirmerPass.value = "password";
+
+// Append Attribute "type" to Input
+myInput_nom.setAttributeNode(attr_nom);
+myInput_prenom.setAttributeNode(attr_prenom);
+myInput_adresse.setAttributeNode(attr_adresse);
+myInput_phone.setAttributeNode(attr_phone);
+myInput_email.setAttributeNode(attr_email);
+myInput_password.setAttributeNode(attr_password);
+myInput_confirmerPass.setAttributeNode(attr_confirmerPass);
 
 //Append Element to Element
 
@@ -90,4 +108,43 @@ document.getElementById("lbE").innerHTML = "Email <br>";
 document.getElementById("lbPss").innerHTML = "Mot de Passe <br>";
 document.getElementById("lbCpss").innerHTML = "Confirmer Mot de Passe <br>";
 
-//Added <br> in input
+// Using Style "css" In Element
+
+// Style On body
+document.body.style.backgroundImage = "URL(\"back.jpg\")"
+document.body.style.backgroundRepeat = "no-repeat"
+document.body.style.backgroundSize = "cover"
+document.body.style.backgroundRepeat = "no-repeat"
+document.body.style.height = "100vh"
+document.body.style.overflow = "hidden";
+
+//Style On Form
+Object.assign(myForm.style, {
+    width: "350px", position: "relative",
+    bottom: "-60px", left: "30px", padding: "40px", backgroundColor: "#cd36cd1f", borderRadius: "10px"
+});
+
+//Style On Input
+Object.assign(myInput_nom.style, { display: "block", padding: "8px", borderRadius: "10px", width: "300px", margin: "5px", });
+
+Object.assign(myInput_prenom.style, { display: "block", padding: "8px", borderRadius: "10px", width: "300px", margin: "5px" });
+
+Object.assign(myInput_adresse.style, { display: "block", padding: "8px", borderRadius: "10px", width: "300px", margin: "5px" });
+
+Object.assign(myInput_phone.style, { display: "block", padding: "8px", borderRadius: "10px", width: "300px", margin: "5px" });
+
+Object.assign(myInput_email.style, { display: "block", padding: "8px", borderRadius: "10px", width: "300px", margin: "5px" });
+
+Object.assign(myInput_password.style, { display: "block", padding: "8px", borderRadius: "10px", width: "300px", margin: "5px" });
+
+Object.assign(myInput_confirmerPass.style, { display: "block", padding: "8px", borderRadius: "10px", width: "300px", margin: "5px" });
+
+//Style On Label
+
+Object.assign(label_nom.style, { color: "white", fontFamily: "sans-serif" })
+Object.assign(label_prenom.style, { color: "white", fontFamily: "sans-serif" })
+Object.assign(label_adresse.style, { color: "white", fontFamily: "sans-serif" })
+Object.assign(label_phone.style, { color: "white", fontFamily: "sans-serif" })
+Object.assign(label_email.style, { color: "white", fontFamily: "sans-serif" })
+Object.assign(label_password.style, { color: "white", fontFamily: "sans-serif" })
+Object.assign(label_confirmerPass.style, { color: "white", fontFamily: "sans-serif" })
